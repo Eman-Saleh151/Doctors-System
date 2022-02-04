@@ -1,0 +1,31 @@
+<!-- <h2>{{pageTitle}}</h2>
+<p>{{ getList(1)}}</p>
+<input type="text" [(ngModel)]="twoway">
+<h5>{{twoway}}</h5> -->
+
+<!-- <h2>Name is:{{attName}}, Age is: {{attAge}}</h2> -->
+<!-- <div id="div1">
+    <span><img src={{obj.img}}></span>
+    <div >
+        <h2><span>Doctor</span> {{obj.name}}</h2>
+        <h4>{{obj.title}}</h4>
+        <h5><i class="fas fa-money-bill-wave-alt"></i>{{obj.Fees}}</h5>
+    </div>
+   
+</div><br> -->
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{obj.img}} class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title"><span>Dr</span>: {{obj.name}}</h2>
+          <p class="card-text">{{obj.title}}.</p>
+          <p class="card-text"><i class="bi bi-cash"></i> {{obj.Fees}}.</p>
+         <p><a [routerLink]="['/doctor', obj.id]" >Show more</a> </p>
+          <app-btn-loading></app-btn-loading>
+        </div>
+      </div>
+    </div>
+  </div>
